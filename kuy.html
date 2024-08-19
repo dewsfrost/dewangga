@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Web Pak Unggah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <marquee>Kelompok Okan SIGMA</marquee>
+        </h1>        
+        <p>INI ADALAH WEB BIODATA XI RPPL 2</p>
+        <p>Berikut adalah identitas kami...</p>
+    </header>
+
+    <main class="gallery">
+        <div class="item">
+            <img src="waduh.jpg" alt="okan Gaming">
+            <button onclick="toggleBiodata('biodata1')">Selengkapnya</button>
+            <div id="biodata1" class="biodata">
+                <h3>Biodata</h3>
+                <p><strong>Nama:</strong> I Putu Okan Vidyananda Putra</p>
+                <p><strong>Kelas:</strong> XI RPL 2</p>
+                <p><strong>Alamat:</strong> Jln. Cekomaria Denpasar Utara Peguyangan Kangin</p>
+                <h4>Sosial Media</h4>
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@okantertekan" data-unique-id="okantertekan" data-embed-type="creator">
+                    <section>
+                        <a target="_blank" href="https://www.tiktok.com/@okantertekan?refer=creator_embed">@okantertekan</a>
+                    </section>
+                </blockquote>
+                <script async src="https://www.tiktok.com/embed.js"></script>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="sigma male.jpg" alt="Sigma">
+            <button onclick="toggleBiodata('biodata2')">Selengkapnya</button>
+            <div id="biodata2" class="biodata">
+                <h3>Biodata</h3>
+                <p><strong>Nama:</strong> Ahmad Pratama Ababil</p>
+                <p><strong>Kelas:</strong> XI RPL 2</p>
+                <p><strong>Alamat:</strong> Kampung Jawa Bali No 100</p>
+                <h4>Sosial Media</h4>
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@bilz.yakan" data-unique-id="bilz.yakan" data-embed-type="creator">
+                    <section>
+                        <a target="_blank" href="https://www.tiktok.com/@bilz.yakan?refer=creator_embed">@bilz.yakan</a>
+                    </section>
+                </blockquote>
+                <script async src="https://www.tiktok.com/embed.js"></script>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="bro.jpg" alt="Dews Gaming">
+            <button onclick="toggleBiodata('biodata3')">Selengkapnya</button>
+            <div id="biodata3" class="biodata">
+                <h3>Biodata</h3>
+                <p><strong>Nama:</strong> I Putu Dewangga Suputra</p>
+                <p><strong>Kelas:</strong> XI RPL 2</p>
+                <p><strong>Alamat:</strong> Jln. Astasura 6 GG 1 No.3</p>
+                <h4>Sosial Media</h4>
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@dews177" data-unique-id="dews177" data-embed-type="creator">
+                    <section>
+                        <a target="_blank" href="https://www.tiktok.com/@dews177?refer=creator_embed">@dews177</a>
+                    </section>
+                </blockquote>
+                <script async src="https://www.tiktok.com/embed.js"></script>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleBiodata(id) {
+            const biodata = document.getElementById(id);
+            biodata.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
